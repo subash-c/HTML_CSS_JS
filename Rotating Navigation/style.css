@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: #fff;
+  background-color: #000;
+}
+
+.container {
+  transform-origin: top left;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+  margin: auto;
+  transition: transform 0.5s linear;
+}
+
+.container.show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle.rotate {
+  transform: rotate(-80deg);
+  z-index: 1;
+  transition: transform 0.7s;
+}
+
+.circle {
+  background-color: rgb(214, 138, 138);
+  height: 200px;
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  width: 200px;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.circle button {
+  cursor: pointer;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+  height: 100px;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  left: 50%;
+  transform: rotate(75deg);
+  transform-origin: top left;
+}
+
+.content {
+  margin: 50px auto;
+  max-width: 1000px;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.content small {
+  font-style: italic;
+}
+
+.container.show-nav + nav ul li {
+  transform: translateX(0);
+}
+
+.content p {
+  line-height: 1.5;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0px;
+
+  /* z-index: 0; */
+  /* border: 3px solid; */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding-left: 30px;
+}
+
+nav ul li {
+  margin: 40px 0;
+  /* color: #fff; */
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul li + li {
+  transform: translateX(-150%);
+  margin-left: 15px;
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+  transform: translateX(-200%);
+}
