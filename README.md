@@ -8,4 +8,5 @@ Mini Projects.
 4.[Hidden Search](/Hidden Search/index.html).  
 5.[Blur Loading](/Blur Loading/index.html).  
 6.[Sign Up Form](/Sign Up Form/index.html).  
-7.[Scroll Animation](/Scroll Animation/index.html).
+7.[Scroll Animation](/Scroll Animation/index.html).  
+8.[Form Wave Animation](/Form Wave Animation/index.html).
